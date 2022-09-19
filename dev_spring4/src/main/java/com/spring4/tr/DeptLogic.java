@@ -11,10 +11,10 @@ public class DeptLogic {
 	public void setDeptDao(DeptDao deptDao) {
 		this.deptDao = deptDao;
 	}
-	public int deptInsert(Map<String,Object> pMap) {
-		logger.info("deptInsert 호출성공");
+	public int deptInsert(Map<String, Object> pMap) {
+		logger.info("deptInsert 호출");
 		int result = 0;
-		deptDao.deptInsert(pMap);
+		result = deptDao.deptInsert(pMap);
 		return result;
 	}
 

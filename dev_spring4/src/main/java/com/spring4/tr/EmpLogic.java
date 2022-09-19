@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class EmpLogic {
 	Logger logger = Logger.getLogger(EmpLogic.class);
 	private DeptDao deptDao = null;
-	public void setDeptDao(DeptDao depztDao) {
+	public void setDeptDao(DeptDao deptDao) {
 		this.deptDao = deptDao;
 	}
 	private EmpDao empDao = null;
@@ -19,7 +19,7 @@ public class EmpLogic {
 		this.empDao = empDao;
 	}
 	//@Transactional(propagation=Propagation.REQUIRES_NEW, rollbackFor= {DataAccessException.class})
-	public int doEmp() {
+	public int cudEmp() {
 		logger.info("doEmp 호출");
 		Map<String,Object> emap = new HashMap<>();
 		emap.put("empno", 9005);
